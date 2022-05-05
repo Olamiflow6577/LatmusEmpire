@@ -158,6 +158,10 @@ video{
     color: rgb(9, 4, 85);
     font-size: 3rem;
 }
+#intro-title-name{
+    color: rgb(15, 4, 63);
+    font-size: 3rem;
+}
 .prdt-categories{
     color: black;
     display: inline-block;
@@ -319,213 +323,138 @@ nav .prdt-category{
     to {opacity: 1}
   }
 
-  
-.prdt-text{
-    color: black;
-    font-size: 3rem;
-    font-family: cursive;
-}
-.prdt{
-    color: #060d49;
-    margin-left: 20px;
-}
-.prdt img{
-    position: relative;
-    width: 38%;
-    top: 5px;
-}
-.food-text{
-    position: relative;
-    bottom:110px;
-    font-size: xx-large;
-    font-weight: bolder;
-    padding: 0;
-    margin: 0;
-}
-.prdt{
-    display: block;
-    width: 95%;
-    overflow-x: scroll;
-}
-.foodstuffs{
-    position: relative;
-    top:auto;
-    max-height: 550px;
-    display: block;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-.food-stuffs{
-    display: inline-block;
-    margin-right: 10px;
-}
-/*
-.foodstuffs::-webkit-scrollbar{
-    width: 0;
-}*/
-.foodstuffs .food-stuffs{
-    width: auto;
-    height: 140px;
-    line-height: 100px;
-    text-align: center;
-    align-items: center;
-    margin-right: 20px;
-}
-.slides{
-    position: relative;
-    top:auto;
-    max-height: 400px;
-    display: block;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-.slide{
-    display: inline-block;
-    margin-right: 10px;
-}
-/*
-.foodstuffs::-webkit-scrollbar{
-    width: 0;
-}*/
-.slides .slide{
-    width: auto;
-    height: 140px;
-    line-height: 100px;
-    text-align: center;
-    align-items: center;
-    margin-right: 20px;
-}
-.printing{
-    position: relative;
-    top:auto;
-    max-height: 400px;
-    display: block;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-.print{
-    display: inline-block;
-    margin-right: 10px;
-}
-/*
-.foodstuffs::-webkit-scrollbar{
-    width: 0;
-}*/
-.printing .print{
-    width: auto;
-    height: 140px;
-    line-height: 100px;
-    text-align: center;
-    align-items: center;
-    margin-right: 20px;
-}
-.foot-wares{
-    position: relative;
-    top:auto;
-    max-height: 400px;
-    display: block;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-.footwares{
-    display: inline-block;
-    margin-right: 10px;
-}
-/*
-.foodstuffs::-webkit-scrollbar{
-    width: 0;
-}*/
-.foot-wares .footwares{
-    width: auto;
-    height: 140px;
-    line-height: 100px;
-    text-align: center;
-    align-items: center;
-    margin-right: 20px;
-}
-.graphics{
-    position: relative;
-    top:auto;
-    max-height: 400px;
-    display: block;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-.graphic{
-    display: inline-block;
-    margin-right: 10px;
-}
-/*
-.foodstuffs::-webkit-scrollbar{
-    width: 0;
-}*/
-.graphics .graphic{
-    width: auto;
-    height: 140px;
-    line-height: 100px;
-    text-align: center;
-    align-items: center;
-    margin-right: 20px;
-}
-.web-dev{
-    position: relative;
-    top:auto;
-    max-height: 400px;
-    display: block;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-.web-develop{
-    display: inline-block;
-    margin-right: 10px;
-}
-/*
-.foodstuffs::-webkit-scrollbar{
-    width: 0;
-}*/
-.web-dev .web-develop{
-    width: auto;
-    height: 140px;
-    line-height: 100px;
-    text-align: center;
-    align-items: center;
-    margin-right: 20px;
-}
-.video-edit{
-    position: relative;
-    top:auto;
-    max-height: 400px;
-    display: block;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-.video-edits{
-    display: inline-block;
-    margin-right: 10px;
-}
-/*
-.foodstuffs::-webkit-scrollbar{
-    width: 0;
-}*/
-.video-edit .video-edits{
-    width: auto;
-    height: 140px;
-    line-height: 100px;
-    text-align: center;
-    align-items: center;
-    margin-right: 20px;
-}
 
 
-
-
+.main-scroll-div{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cover{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.cover::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 96%;
+    width: 50px;
+    background-image: linear-gradient(90deg,#4a39e4,transparent);
+}
+.cover::after{
+    position: absolute;
+    content: "";
+    left: 0%;
+    top: 0;
+    z-index: 99;
+    height: 96%;
+    width: 50px;
+    background-image: linear-gradient(-90deg,rgb(65, 38, 189),transparent);
+}
+.scroll-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.child{
+    min-width: 600px;
+    height: 450px;
+    margin: 2px 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    overflow: hidden;
+}
+.scroll-images::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.child-img{
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    color: red;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+}
+.icon:hover{
+    color: #fff;
+    background-color: #060d49;
+}
+.scroll-images1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}.scroll-images2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.scroll-images3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.scroll-images4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.scroll-images5{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.scroll-images6{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.scroll-images7{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
 
 
 
@@ -535,6 +464,7 @@ nav .prdt-category{
 .contact_info .info_item{
     position: relative;
     top: 250px;
+    margin-left: 20px;
 }
 .contact_info .info_item i {
     position: relative;
@@ -619,7 +549,7 @@ nav .prdt-category{
     border-radius: 30px;
     padding: 0px 0 0px 0;
 }
-.button .icon :nth-child(1){
+.buttons .icon :nth-child(1){
     color: rgb(0, 0, 0);
 }
 .social-links1{
@@ -744,3 +674,4 @@ nav .prdt-category{
     padding-left: 5px;
     padding-right: 5px;
     color: rgb(0, 0, 0);
+}
