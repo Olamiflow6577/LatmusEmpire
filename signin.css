@@ -1,0 +1,75 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(70, 70, 3);
+    padding-top: 30vh;
+    left: 150px;
+}
+.form-container{
+    width: 250px;
+    height: auto;
+    padding: 40px 30px;
+    background-color: rgb(233, 148, 148);
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px black;
+    margin: auto;
+    position: relative;
+}
+div.user-img{
+    background:url('img/atupa\ tailor\ advert.jpg') no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    position:absolute;
+    top: -30px;
+    left: 130px;
+}
+
+ul.list{
+    list-style-type: none;
+    text-align: center;
+}
+ul.list li{
+    width: 250px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+ul.list li input{
+    width: 200px;
+    text-align: center;
+    padding: 5px 0px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+ul.list li input[type="button"]{
+    background-color: rgb(42, 42, 196);
+    color: aliceblue;
+    border-radius: 5px;
+}
+ul.list li input[type="button"]:hover{
+    background-color: aliceblue;
+    color: rgb(42, 42, 196);
+}
+li.password{
+    color: red;
+    filter: opacity(60%);
+}
+li.password:hover {
+    color: red;
+    filter: opacity(100%);
+}
+.hi{
+    text-size-adjust: 10px;
+}
+ul.list li{
+    text-size-adjust: 10px;
+    filter: opacity(80%);
+}
+ul.list li:hover {
+    color: rgb(4, 19, 58);
+    filter: opacity(100%);
+}
